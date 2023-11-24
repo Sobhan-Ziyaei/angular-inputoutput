@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-inputoutput';
   ratings: number[] = [3.5, 3, 4.5, 1.5, 2];
+
+  onstarClicked(rating: number) {
+    console.log(`The rating is ${rating}`);
+  }
 }

@@ -1,1 +1,6 @@
-<app-star *ngFor="let rating of ratings" [rating]="rating"></app-star>
+<app-star
+  *ngFor="let rating of ratings"
+  [rating]="rating"
+  (starClicked)="onstarClicked($event)"
+>
+</app-star>
